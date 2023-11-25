@@ -37,7 +37,8 @@ class ISICDataset(Dataset):
         if self.training:
             label = 0 if self.label_list[index] == 'benign' else 1
         else:
-            label = int(self.label_list[index])
+            label = 0 if self.label_list[index] == 'benign' else 1
+            # label = int(self.label_list[index])??????
 
         if self.transform:
             # save random state so that if more elaborate transforms are used
