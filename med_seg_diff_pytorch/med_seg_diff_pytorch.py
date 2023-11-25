@@ -263,7 +263,7 @@ class Conditioning(nn.Module):
 
 # model
 
-@beartype
+# @beartype
 class Unet(nn.Module):
     def __init__(
         self,
