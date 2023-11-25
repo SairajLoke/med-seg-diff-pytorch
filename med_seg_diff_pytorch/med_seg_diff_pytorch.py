@@ -5,7 +5,7 @@ from functools import partial
 from collections import namedtuple
 
 from beartype import beartype
-
+ 
 import torch
 from torch import nn, einsum
 import torch.nn.functional as F
